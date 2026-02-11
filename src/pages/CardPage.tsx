@@ -8,6 +8,7 @@ import {
 } from '@mui/material'
 import FavoriteIcon from '@mui/icons-material/Favorite'
 import './styles.css'
+import ImageLoader from './ImageLoader'
 
 interface ImagePosition {
   id: number
@@ -353,20 +354,9 @@ const CardPage = () => {
                           >
                             {currentMessage.title}
                           </Typography>
-                          <Box
-                            component="img"
+                          <ImageLoader
                             src="/valentines-day-page/images/image.jpg"
                             alt="Valentine"
-                            sx={{
-                              display: 'block',
-                              maxWidth: '100%',
-                              width: 150,
-                              height: 280,
-                              objectFit: 'contain',
-                              borderRadius: 2,
-                              mt: 1,
-                              mx: 'auto',
-                            }}
                           />
                         </motion.div>
                       ) : (<motion.div
