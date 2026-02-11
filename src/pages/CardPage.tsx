@@ -286,7 +286,7 @@ const CardPage = () => {
                 className="main-card"
                 sx={{
                   width: { xs: 300, sm: 400 },
-                  height: { xs: 400, sm: 500 },
+                  height: 550,
                   position: 'relative',
                   boxShadow: '0 10px 40px rgba(255, 145, 199, 0.25)',
                   borderRadius: 4,
@@ -322,8 +322,6 @@ const CardPage = () => {
                       flexDirection: 'column',
                       alignItems: 'center',
                       justifyContent: 'center',
-                      //background: 'linear-gradient(135deg, #ffffff 0%, #fffefd 100%)',
-                      //backgroundColor: '#fa7b9b',
                       borderRadius: 4,
                       p: 4,
                       transform: 'rotateY(180deg)',
